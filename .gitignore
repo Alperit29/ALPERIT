@@ -1,0 +1,22 @@
+# Archivos generados por .NET
+**/bin/
+**/obj/
+.vs/
+.vscode/
+
+# Configuraciones privadas
+.env
+.env.*
+**/appsettings.Local.json
+**/appsettings.*.local.json
+
+# Fotografías y archivos de usuarios
+**/uploads/
+**/fotos_peritaje/
+**/fotos peritaje/
+
+# Archivos temporales
+*.log
+*.tmp
+# Imágenes ajenas al código del proyecto
+/ChatGPT Image*.png

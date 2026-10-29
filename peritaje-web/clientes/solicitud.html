@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nueva Solicitud - ALPERIT</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h2>ALPERIT</h2>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="#">Mis solicitudes</a>
+    </nav>
+  </header>
+
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="solicitud-container">
+
+    <section class="formulario-card">
+
+      <h1>Nueva Solicitud</h1>
+
+      <p class="subtitulo">
+        Contanos qué vehículo estás buscando.
+      </p>
+
+
+      <!-- 1. DATOS PERSONALES -->
+      <div class="seccion-formulario">
+
+        <h2>1. Datos personales</h2>
+
+        <div class="campo">
+          <label for="nombre">Nombre y apellido</label>
+
+          <input
+            type="text"
+            id="nombre"
+            placeholder="Ej: Juan Pérez"
+          >
+        </div>
+
+        <div class="campo">
+  <label for="dni">DNI</label>
+
+  <input
+    type="text"
+    id="dni"
+    placeholder="Ej: 30123456"
+  >
+</div>
+
+
+        <div class="campo">
+          <label for="email">Email</label>
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Ej: juan@email.com"
+          >
+        </div>
+
+
+        <div class="campo">
+          <label for="telefono">Teléfono / WhatsApp</label>
+
+          <input
+            type="tel"
+            id="telefono"
+            placeholder="Ej: 351 123 4567"
+          >
+        </div>
+
+      </div>
+
+
+      <!-- 2. VEHÍCULO QUE BUSCA -->
+      <div class="seccion-formulario">
+
+        <h2>2. Vehículo que busca</h2>
+
+
+        <div class="campo">
+          <label for="marca">Marca</label>
+
+          <select id="marca">
+
+            <option value="">Seleccioná una marca</option>
+
+            <option value="Toyota">Toyota</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Renault">Renault</option>
+            <option value="Otra">Otra</option>
+
+          </select>
+        </div>
+
+
+        <div class="campo">
+          <label for="modelo">Modelo</label>
+
+          <input
+            type="text"
+            id="modelo"
+            placeholder="Ej: Corolla, Hilux, Amarok..."
+          >
+        </div>
+
+
+        <div class="fila-campos">
+
+    <div class="campo">
+        <label for="anioDesde">Año desde</label>
+        <input
+            type="number"
+            id="anioDesde"
+            placeholder="Ej: 2010"
+            min="1900"
+            max="2100"
+        >
+    </div>
+
+    <div class="campo">
+        <label for="anioHasta">Año hasta</label>
+        <input
+            type="number"
+            id="anioHasta"
+            placeholder="Ej: 2015"
+            min="1900"
+            max="2100"
+        >
+    </div>
+
+</div>
+
+        <div class="campo">
+          <label for="transmision">Transmisión</label>
+
+          <select id="transmision">
+
+            <option value="">Seleccioná una opción</option>
+            <option value="Manual">Manual</option>
+            <option value="Automatica">Automática</option>
+            <option value="Indistinto">Indistinto</option>
+
+          </select>
+        </div>
+
+
+        <div class="campo">
+          <label for="kilometraje">Kilometraje máximo</label>
+
+          <input
+            type="number"
+            id="kilometraje"
+            placeholder="Ej: 80000"
+          >
+        </div>
+
+      </div>
+
+
+      <!-- 3. PRESUPUESTO -->
+      <div class="seccion-formulario">
+
+        <h2>3. Presupuesto</h2>
+
+
+        <div class="fila-campos">
+
+    <div class="campo">
+        <label for="moneda">Moneda</label>
+
+        <select id="moneda">
+            <option value="ARS">ARS - Pesos argentinos</option>
+            <option value="USD">USD - Dólares</option>
+        </select>
+    </div>
+
+    <div class="campo">
+        <label for="presupuesto">Presupuesto máximo disponible</label>
+
+        <input
+            type="number"
+            id="presupuesto"
+            placeholder="Ej: 30000000"
+            min="0"
+        >
+    </div>
+
+</div>
+
+<small class="ayuda-presupuesto" id="ayudaPresupuesto">
+    Ingresá el presupuesto máximo disponible.
+</small>
+
+
+        <div class="campo">
+
+          <label for="formaCompra">
+            Forma de compra
+          </label>
+
+          <select id="formaCompra">
+
+            <option value="">Seleccioná una opción</option>
+            <option value="Contado">Contado</option>
+            <option value="Financiacion">Financiación</option>
+            <option value="Indistinto">Indistinto</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+      <!-- 4. INFORMACIÓN ADICIONAL -->
+<div class="seccion-formulario">
+
+  <h2>4. Información adicional</h2>
+
+  <div class="campo">
+    <label for="observaciones">
+      Observaciones
+    </label>
+
+    <textarea
+      id="observaciones"
+      rows="5"
+      placeholder="Ej: Busco preferentemente color blanco, uso familiar, único dueño, service oficial..."
+    ></textarea>
+  </div>
+
+</div>
+
+
+<!-- BOTÓN ENVIAR -->
+<div class="acciones-formulario">
+
+  <a href="index.html" class="btn-cancelar">
+    Cancelar
+  </a>
+
+  <button type="button" id="btnEnviar" class="btn-enviar">
+  Enviar solicitud
+</button>
+
+</div>
+
+
+    </section>
+
+  </main>
+
+  <script src="app.js?v=2"></script>
+
+</body>
+
+</html>
